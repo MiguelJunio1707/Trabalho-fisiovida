@@ -30,7 +30,7 @@ if (isset($_SESSION['user_id'])) {
     <div class="row justify-content-center">
       <div class="col-md-5">
         <div class="card shadow-lg">
-          <div class="card-body p-4 text-success card border-success">
+          <div class="card-body p-5 text-success card border-success">
             <h1 class="h4 mb-3 text-center text-success">Fisiovida</h1>
             <?php if (!empty($_GET['error'])): ?>
               <div class="alert alert-danger py-2"><?php echo htmlspecialchars($_GET['error']); ?></div>
