@@ -21,15 +21,17 @@ if (isset($_SESSION['user_id'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-success d-flex align-items-center imagemfisio" style="min-height:100vh; background-image: url('Agendamento de Fisioterapia com Conforto.png' ">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <div class="card-body p-4">
-            <h1 class="h4 mb-3 text-center">Fisiovida</h1>
+      <div class="col-md-5">
+        <div class="card shadow-lg">
+          <div class="card-body p-4 text-success card border-success">
+            <h1 class="h4 mb-3 text-center text-success">Fisiovida</h1>
             <?php if (!empty($_GET['error'])): ?>
               <div class="alert alert-danger py-2"><?php echo htmlspecialchars($_GET['error']); ?></div>
             <?php endif; ?>
@@ -42,10 +44,11 @@ if (isset($_SESSION['user_id'])) {
                 <label class="form-label">Senha</label>
                 <input type="password" name="password" class="form-control">
               </div>
-              <button type="submit" class="btn btn-primary w-100">Entrar</button>
+              <button type="submit" class="botao btn btn-success w-100">Entrar</button>
             </form>
             <hr>
             <p class="text-muted small mb-0">Aqui você pode colocar o que quiser!</p>
+            </div>
           </div>
         </div>
       </div>
